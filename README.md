@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @MugishaRonald
-- 👀 I’m interested in cyber security
-- 🌱 I’m currently learning python
+- 👀 I’m interested in Software Engineering
+- 🌱 I’m currently learning React js
 - 💞️ I’m looking to collaborate on 
 - 📫 How to reach me mugishar21@gmail.com
 
