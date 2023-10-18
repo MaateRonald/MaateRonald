@@ -1,0 +1,273 @@
+/* =========== Google Fonts ============ */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+/* ======================= Cards ====================== */
+.cardBox {
+  position: relative;
+  width: 100%;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+  padding-top: 5px;
+}
+
+.cardBox .inner-card {
+  position: relative;
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.cardBox .inner-card .numbers {
+  position: relative;
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: #3b7ddd;
+}
+
+.cardBox .inner-card .cardName {
+  color: var(--black2);
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
+.cardBox .inner-card .iconBx {
+  font-size: 3.5rem;
+  color: #3b7ddd;
+}
+
+
+.cardBox .inner-card:hover {
+  background-color: #3b7ddd;
+}
+.cardBox .inner-card:hover .numbers,
+.cardBox .inner-card:hover .cardName,
+.cardBox .inner-card:hover .iconBx {
+  color: #fff;
+}
+
+
+/* ====================== Employees List Card ========================== */
+.Emplist {
+  position: relative;
+  display: grid;
+  min-height: 500px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+}
+.Emplist .imgBx {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.Emplist .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Emplist .cardHeader h2{
+  color: #3b7ddd;
+}
+.Emplist table tr td {
+  padding: 12px 10px;
+}
+
+.Emplist table tr td h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2rem;
+}
+.Emplist table tr td h4 span {
+  font-size: 14px;
+  color: var(--black2);
+}
+.Emplist table tr:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+.Emplist table tr:hover td h4 span {
+  color: var(--white);
+}
+/* ====================== Pie chart ========================== */
+
+.piechart {
+  display: block;
+  position: inherit;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: conic-gradient(
+      pink 70deg, 
+      lightblue 0 235deg, 
+      orange 0);
+
+  justify-content: center;
+  align-items: center;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.color-box {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  border-radius: 4px;
+}
+/* ============= Holidays Card ================== */
+.holidays{
+    position: relative;
+    display: grid;
+    max-height: 500px;
+    grid-template-rows: 50px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+
+}
+.holidays .h2{
+  color:#3b7ddd;
+}
+.holidays .specialday {
+  padding: 2px 2px;
+  color: #b30d0d;
+  font-weight: 300px;
+  
+
+}
+.row1 .list-items{
+  margin-top: 25px;
+}
+/* ======================================= Second Row =============================== */
+.second-row1 {
+  position: relative;
+  display: grid;
+  max-height: 600px;
+  min-width: 700px;
+  grid-template-rows: 50px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  grid-column: span 2;
+}
+.second-row1 .h2{
+  color:#3b7ddd;
+}
+/* ======== Calendar =========*/
+.calendar-card {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+  display:flex;
+  grid-column: span 2;
+  min-height: 600px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+td {
+  
+  padding: 10px;
+  text-align: center;
+}
+
+.current-month {
+  font-weight: bold;
+}
+
+.today {
+  background-color: #ffc107;
+}
+
+/* ====================== Responsive Design ========================== */
+@media (max-width: 991px) {
+  .navigation {
+    left: -300px;
+  }
+  .navigation.active {
+    width: 300px;
+    left: 0;
+  }
+  .main {
+    width: 100%;
+    left: 0;
+  }
+  .main.active {
+    left: 300px;
+  }
+  .cardBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .row1 {
+    grid-template-columns: 1fr;
+  }
+  .Dashleave {
+    overflow-x: auto;
+  }
+  .status.inProgress {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardBox {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cardHeader h2 {
+    font-size: 20px;
+  }
+  .user {
+    min-width: 40px;
+  }
+  .navigation {
+    width: 100%;
+    left: -100%;
+    z-index: 1000;
+  }
+  .navigation.active {
+    width: 100%;
+    left: 0;
+  }
+  .toggle {
+    z-index: 10001;
+  }
+  .main.active .toggle {
+    color: #fff;
+    position: fixed;
+    right: 0;
+    left: initial;
+  }
+}
